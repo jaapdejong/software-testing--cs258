@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>Coverage for /usr/share/pyshared/coverage/control</title>
+<link rel='stylesheet' href='style.css' type='text/css'>
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript'>
+function toggle_lines(btn, cls) {
+    var btn = $(btn);
+    var hide = "hide_"+cls;
+    if (btn.hasClass(hide)) {
+        $("#source ."+cls).removeClass(hide);
+        btn.removeClass(hide);
+    }
+    else {
+        $("#source ."+cls).addClass(hide);
+        btn.addClass(hide);
+    }
+}
+</script>
+</head>
+<body>
+<div id='header'>
+    <div class='content'>
+        <h1>Coverage for <b>/usr/share/pyshared/coverage/control</b> :
+            <span class='pc_cov'>1%</span>
+        </h1>
+        <h2 class='stats'>
+            115 statements
+            <span class='run hide_run' onclick='toggle_lines(this, "run")'>1 run</span>
+            <span class='exc' onclick='toggle_lines(this, "exc")'>0 excluded</span>
+            <span class='mis' onclick='toggle_lines(this, "mis")'>114 missing</span>
+            
+        </h2>
+    </div>
+</div>
+
+<div id='source'>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+<td class='linenos' valign='top'>
+<p class='pln'>1</p>
+<p class='pln'>2</p>
+<p class='stm mis'>3</p>
+<p class='pln'>4</p>
+<p class='stm mis'>5</p>
+<p class='stm mis'>6</p>
+<p class='stm mis'>7</p>
+<p class='stm mis'>8</p>
+<p class='stm mis'>9</p>
+<p class='stm mis'>10</p>
+<p class='stm mis'>11</p>
+<p class='stm mis'>12</p>
+<p class='stm mis'>13</p>
+<p class='stm mis'>14</p>
+<p class='pln'>15</p>
+<p class='stm mis'>16</p>
+<p class='pln'>17</p>
+<p class='pln'>18</p>
+<p class='pln'>19</p>
+<p class='pln'>20</p>
+<p class='pln'>21</p>
+<p class='pln'>22</p>
+<p class='pln'>23</p>
+<p class='pln'>24</p>
+<p class='pln'>25</p>
+<p class='pln'>26</p>
+<p class='pln'>27</p>
+<p class='pln'>28</p>
+<p class='pln'>29</p>
+<p class='pln'>30</p>
+<p class='stm mis'>31</p>
+<p class='pln'>32</p>
+<p class='pln'>33</p>
+<p class='pln'>34</p>
+<p class='pln'>35</p>
+<p class='pln'>36</p>
+<p class='pln'>37</p>
+<p class='pln'>38</p>
+<p class='pln'>39</p>
+<p class='pln'>40</p>
+<p class='pln'>41</p>
+<p class='pln'>42</p>
+<p class='pln'>43</p>
+<p class='pln'>44</p>
+<p class='pln'>45</p>
+<p class='pln'>46</p>
+<p class='pln'>47</p>
+<p class='pln'>48</p>
+<p class='pln'>49</p>
+<p class='pln'>50</p>
+<p class='pln'>51</p>
+<p class='pln'>52</p>
+<p class='pln'>53</p>
+<p class='pln'>54</p>
+<p class='stm mis'>55</p>
+<p class='pln'>56</p>
+<p class='stm mis'>57</p>
+<p class='stm mis'>58</p>
+<p class='stm mis'>59</p>
+<p class='pln'>60</p>
+<p class='stm mis'>61</p>
+<p class='stm mis'>62</p>
+<p class='pln'>63</p>
+<p class='stm mis'>64</p>
+<p class='pln'>65</p>
+<p class='pln'>66</p>
+<p class='pln'>67</p>
+<p class='pln'>68</p>
+<p class='stm mis'>69</p>
+<p class='stm mis'>70</p>
+<p class='pln'>71</p>
+<p class='pln'>72</p>
+<p class='pln'>73</p>
+<p class='pln'>74</p>
+<p class='stm mis'>75</p>
+<p class='stm mis'>76</p>
+<p class='pln'>77</p>
+<p class='stm mis'>78</p>
+<p class='pln'>79</p>
+<p class='stm mis'>80</p>
+<p class='pln'>81</p>
+<p class='stm mis'>82</p>
+<p class='pln'>83</p>
+<p class='pln'>84</p>
+<p class='pln'>85</p>
+<p class='pln'>86</p>
+<p class='pln'>87</p>
+<p class='stm mis'>88</p>
+<p class='pln'>89</p>
+<p class='pln'>90</p>
+<p class='stm mis'>91</p>
+<p class='pln'>92</p>
+<p class='pln'>93</p>
+<p class='stm mis'>94</p>
+<p class='stm mis'>95</p>
+<p class='pln'>96</p>
+<p class='pln'>97</p>
+<p class='pln'>98</p>
+<p class='stm mis'>99</p>
+<p class='stm mis'>100</p>
+<p class='pln'>101</p>
+<p class='stm mis'>102</p>
+<p class='pln'>103</p>
+<p class='pln'>104</p>
+<p class='pln'>105</p>
+<p class='pln'>106</p>
+<p class='pln'>107</p>
+<p class='pln'>108</p>
+<p class='pln'>109</p>
+<p class='pln'>110</p>
+<p class='pln'>111</p>
+<p class='stm mis'>112</p>
+<p class='pln'>113</p>
+<p class='pln'>114</p>
+<p class='stm mis'>115</p>
+<p class='pln'>116</p>
+<p class='pln'>117</p>
+<p class='pln'>118</p>
+<p class='pln'>119</p>
+<p class='pln'>120</p>
+<p class='pln'>121</p>
+<p class='pln'>122</p>
+<p class='stm mis'>123</p>
+<p class='stm mis'>124</p>
+<p class='stm mis'>125</p>
+<p class='stm mis'>126</p>
+<p class='stm mis'>127</p>
+<p class='stm mis'>128</p>
+<p class='pln'>129</p>
+<p class='stm mis'>130</p>
+<p class='pln'>131</p>
+<p class='pln'>132</p>
+<p class='pln'>133</p>
+<p class='stm mis'>134</p>
+<p class='stm mis'>135</p>
+<p class='stm mis'>136</p>
+<p class='pln'>137</p>
+<p class='pln'>138</p>
+<p class='pln'>139</p>
+<p class='stm mis'>140</p>
+<p class='stm mis'>141</p>
+<p class='pln'>142</p>
+<p class='stm mis'>143</p>
+<p class='pln'>144</p>
+<p class='pln'>145</p>
+<p class='pln'>146</p>
+<p class='pln'>147</p>
+<p class='pln'>148</p>
+<p class='pln'>149</p>
+<p class='pln'>150</p>
+<p class='pln'>151</p>
+<p class='pln'>152</p>
+<p class='pln'>153</p>
+<p class='stm mis'>154</p>
+<p class='pln'>155</p>
+<p class='pln'>156</p>
+<p class='pln'>157</p>
+<p class='pln'>158</p>
+<p class='pln'>159</p>
+<p class='stm mis'>160</p>
+<p class='pln'>161</p>
+<p class='stm mis'>162</p>
+<p class='pln'>163</p>
+<p class='stm mis'>164</p>
+<p class='stm mis'>165</p>
+<p class='pln'>166</p>
+<p class='stm mis'>167</p>
+<p class='pln'>168</p>
+<p class='stm mis'>169</p>
+<p class='stm mis'>170</p>
+<p class='pln'>171</p>
+<p class='stm mis'>172</p>
+<p class='stm mis'>173</p>
+<p class='stm mis'>174</p>
+<p class='stm mis'>175</p>
+<p class='pln'>176</p>
+<p class='stm mis'>177</p>
+<p class='pln'>178</p>
+<p class='stm run hide_run'>179</p>
+<p class='stm mis'>180</p>
+<p class='pln'>181</p>
+<p class='stm mis'>182</p>
+<p class='pln'>183</p>
+<p class='pln'>184</p>
+<p class='pln'>185</p>
+<p class='pln'>186</p>
+<p class='pln'>187</p>
+<p class='pln'>188</p>
+<p class='stm mis'>189</p>
+<p class='stm mis'>190</p>
+<p class='pln'>191</p>
+<p class='stm mis'>192</p>
+<p class='pln'>193</p>
+<p class='stm mis'>194</p>
+<p class='stm mis'>195</p>
+<p class='pln'>196</p>
+<p class='stm mis'>197</p>
+<p class='pln'>198</p>
+<p class='pln'>199</p>
+<p class='pln'>200</p>
+<p class='pln'>201</p>
+<p class='pln'>202</p>
+<p class='pln'>203</p>
+<p class='pln'>204</p>
+<p class='pln'>205</p>
+<p class='stm mis'>206</p>
+<p class='stm mis'>207</p>
+<p class='pln'>208</p>
+<p class='stm mis'>209</p>
+<p class='pln'>210</p>
+<p class='stm mis'>211</p>
+<p class='pln'>212</p>
+<p class='stm mis'>213</p>
+<p class='pln'>214</p>
+<p class='stm mis'>215</p>
+<p class='stm mis'>216</p>
+<p class='pln'>217</p>
+<p class='stm mis'>218</p>
+<p class='pln'>219</p>
+<p class='pln'>220</p>
+<p class='pln'>221</p>
+<p class='pln'>222</p>
+<p class='pln'>223</p>
+<p class='pln'>224</p>
+<p class='pln'>225</p>
+<p class='stm mis'>226</p>
+<p class='pln'>227</p>
+<p class='stm mis'>228</p>
+<p class='pln'>229</p>
+<p class='stm mis'>230</p>
+<p class='stm mis'>231</p>
+<p class='stm mis'>232</p>
+<p class='pln'>233</p>
+<p class='pln'>234</p>
+<p class='stm mis'>235</p>
+<p class='pln'>236</p>
+<p class='stm mis'>237</p>
+<p class='stm mis'>238</p>
+<p class='pln'>239</p>
+<p class='stm mis'>240</p>
+<p class='pln'>241</p>
+<p class='pln'>242</p>
+<p class='pln'>243</p>
+<p class='pln'>244</p>
+<p class='pln'>245</p>
+<p class='pln'>246</p>
+<p class='pln'>247</p>
+<p class='pln'>248</p>
+<p class='pln'>249</p>
+<p class='pln'>250</p>
+<p class='pln'>251</p>
+<p class='pln'>252</p>
+<p class='pln'>253</p>
+<p class='pln'>254</p>
+<p class='pln'>255</p>
+<p class='pln'>256</p>
+<p class='stm mis'>257</p>
+<p class='stm mis'>258</p>
+<p class='pln'>259</p>
+<p class='pln'>260</p>
+<p class='pln'>261</p>
+<p class='pln'>262</p>
+<p class='stm mis'>263</p>
+<p class='pln'>264</p>
+<p class='pln'>265</p>
+<p class='pln'>266</p>
+<p class='pln'>267</p>
+<p class='pln'>268</p>
+<p class='stm mis'>269</p>
+<p class='stm mis'>270</p>
+<p class='pln'>271</p>
+<p class='stm mis'>272</p>
+<p class='pln'>273</p>
+<p class='stm mis'>274</p>
+<p class='pln'>275</p>
+<p class='pln'>276</p>
+<p class='pln'>277</p>
+<p class='pln'>278</p>
+<p class='pln'>279</p>
+<p class='pln'>280</p>
+<p class='pln'>281</p>
+<p class='stm mis'>282</p>
+<p class='stm mis'>283</p>
+<p class='pln'>284</p>
+<p class='stm mis'>285</p>
+<p class='pln'>286</p>
+<p class='pln'>287</p>
+<p class='pln'>288</p>
+<p class='pln'>289</p>
+<p class='pln'>290</p>
+<p class='pln'>291</p>
+<p class='pln'>292</p>
+<p class='pln'>293</p>
+<p class='pln'>294</p>
+<p class='stm mis'>295</p>
+<p class='stm mis'>296</p>
+<p class='pln'>297</p>
+<p class='pln'>298</p>
+<p class='stm mis'>299</p>
+<p class='pln'>300</p>
+<p class='pln'>301</p>
+<p class='pln'>302</p>
+<p class='pln'>303</p>
+<p class='stm mis'>304</p>
+<p class='stm mis'>305</p>
+<p class='pln'>306</p>
+<p class='pln'>307</p>
+<p class='stm mis'>308</p>
+<p class='pln'>309</p>
+<p class='pln'>310</p>
+<p class='pln'>311</p>
+<p class='pln'>312</p>
+<p class='pln'>313</p>
+<p class='pln'>314</p>
+<p class='stm mis'>315</p>
+<p class='stm mis'>316</p>
+<p class='stm mis'>317</p>
+<p class='stm mis'>318</p>
+<p class='stm mis'>319</p>
+<p class='pln'>320</p>
+<p class='pln'>321</p>
+<p class='stm mis'>322</p>
+<p class='pln'>323</p>
+<p class='stm mis'>324</p>
+<p class='pln'>325</p>
+<p class='pln'>326</p>
+<p class='stm mis'>327</p>
+<p class='stm mis'>328</p>
+<p class='pln'>329</p>
+<p class='stm mis'>330</p>
+<p class='pln'>331</p>
+<p class='pln'>332</p>
+<p class='pln'>333</p>
+<p class='pln'>334</p>
+<p class='pln'>335</p>
+<p class='pln'>336</p>
+<p class='pln'>337</p>
+<p class='pln'>338</p>
+<p class='pln'>339</p>
+<p class='pln'>340</p>
+<p class='pln'>341</p>
+<p class='pln'>342</p>
+<p class='pln'>343</p>
+<p class='pln'>344</p>
+<p class='pln'>345</p>
+<p class='stm mis'>346</p>
+    
+</td>
+<td class='text' valign='top'>
+<p class='pln'><span class='str'>&quot;&quot;&quot;Core control stuff for Coverage.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>import</span> <span class='nam'>atexit</span><span class='op'>,</span> <span class='nam'>os</span><span class='op'>,</span> <span class='nam'>socket</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>annotate</span> <span class='key'>import</span> <span class='nam'>AnnotateReporter</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>backward</span> <span class='key'>import</span> <span class='nam'>string_class</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># pylint: disable-msg=W0622</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>codeunit</span> <span class='key'>import</span> <span class='nam'>code_unit_factory</span><span class='op'>,</span> <span class='nam'>CodeUnit</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>collector</span> <span class='key'>import</span> <span class='nam'>Collector</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>data</span> <span class='key'>import</span> <span class='nam'>CoverageData</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>files</span> <span class='key'>import</span> <span class='nam'>FileLocator</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>html</span> <span class='key'>import</span> <span class='nam'>HtmlReporter</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>results</span> <span class='key'>import</span> <span class='nam'>Analysis</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>summary</span> <span class='key'>import</span> <span class='nam'>SummaryReporter</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>xmlreport</span> <span class='key'>import</span> <span class='nam'>XmlReporter</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>class</span> <span class='nam'>coverage</span><span class='op'>(</span><span class='nam'>object</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Programmatic access to Coverage.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; To use::</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; from coverage import coverage</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; cov = coverage()</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; cov.start()</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; #.. blah blah (run your code) blah blah ..</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; cov.stop()</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; cov.html_report(directory=&#39;covhtml&#39;)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>__init__</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>data_file</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>data_suffix</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span> <span class='nam'>cover_pylib</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>auto_data</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span> <span class='nam'>timid</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span> <span class='nam'>branch</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `data_file` is the base name of the data file to use, defaulting to</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;.coverage&quot;.&nbsp; `data_suffix` is appended to `data_file` to create the</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; final file name.&nbsp; If `data_suffix` is simply True, then a suffix is</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; created with the machine and process identity included.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `cover_pylib` is a boolean determining whether Python code installed</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; with the Python interpreter is measured.&nbsp; This includes the Python</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; standard library and any packages installed with the interpreter.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; If `auto_data` is true, then any existing data file will be read when</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; coverage measurement starts, and data will be saved automatically when</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; measurement stops.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; If `timid` is true, then a slower and simpler trace function will be</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; used.&nbsp; This is important for some environments where manipulation of</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; tracing functions breaks the faster trace function.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; If `branch` is true, then branch coverage will be measured in addition</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; to the usual statement coverage.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>coverage</span> <span class='key'>import</span> <span class='nam'>__version__</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_pylib</span> <span class='op'>=</span> <span class='nam'>cover_pylib</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>auto_data</span> <span class='op'>=</span> <span class='nam'>auto_data</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>atexit_registered</span> <span class='op'>=</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_re</span> <span class='op'>=</span> <span class='str'>&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_list</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>file_locator</span> <span class='op'>=</span> <span class='nam'>FileLocator</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Timidity: for nose users, read an environment variable.&nbsp; This is a</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># cheap hack, since the rest of the command line arguments aren&#39;t</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># recognized, but it solves some users&#39; problems.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>timid</span> <span class='op'>=</span> <span class='nam'>timid</span> <span class='key'>or</span> <span class='op'>(</span><span class='str'>&#39;--timid&#39;</span> <span class='key'>in</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>environ</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='str'>&#39;COVERAGE_OPTIONS&#39;</span><span class='op'>,</span> <span class='str'>&#39;&#39;</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span> <span class='op'>=</span> <span class='nam'>Collector</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_should_trace</span><span class='op'>,</span> <span class='nam'>timid</span><span class='op'>=</span><span class='nam'>timid</span><span class='op'>,</span> <span class='nam'>branch</span><span class='op'>=</span><span class='nam'>branch</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Create the data file.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>data_suffix</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>isinstance</span><span class='op'>(</span><span class='nam'>data_suffix</span><span class='op'>,</span> <span class='nam'>string_class</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># if data_suffix=True, use .machinename.pid</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>data_suffix</span> <span class='op'>=</span> <span class='str'>&quot;.%s.%s&quot;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>socket</span><span class='op'>.</span><span class='nam'>gethostname</span><span class='op'>(</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>getpid</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>data_suffix</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span> <span class='op'>=</span> <span class='nam'>CoverageData</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>basename</span><span class='op'>=</span><span class='nam'>data_file</span><span class='op'>,</span> <span class='nam'>suffix</span><span class='op'>=</span><span class='nam'>data_suffix</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>collector</span><span class='op'>=</span><span class='str'>&quot;coverage v%s&quot;</span> <span class='op'>%</span> <span class='nam'>__version__</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># The default exclude pattern.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude</span><span class='op'>(</span><span class='str'>&#39;# *pragma[: ]*[nN][oO] *[cC][oO][vV][eE][rR]&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># The prefix for files considered &quot;installed with the interpreter&quot;.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_pylib</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Look at where the &quot;os&quot; module is located.&nbsp; That&#39;s the indication</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># for &quot;installed with the interpreter&quot;.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>os_file</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>file_locator</span><span class='op'>.</span><span class='nam'>canonical_filename</span><span class='op'>(</span><span class='nam'>os</span><span class='op'>.</span><span class='nam'>__file__</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>pylib_prefix</span> <span class='op'>=</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>path</span><span class='op'>.</span><span class='nam'>split</span><span class='op'>(</span><span class='nam'>os_file</span><span class='op'>)</span><span class='op'>[</span><span class='num'>0</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># To avoid tracing the coverage code itself, we skip anything located</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># where we are.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>here</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>file_locator</span><span class='op'>.</span><span class='nam'>canonical_filename</span><span class='op'>(</span><span class='nam'>__file__</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_prefix</span> <span class='op'>=</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>path</span><span class='op'>.</span><span class='nam'>split</span><span class='op'>(</span><span class='nam'>here</span><span class='op'>)</span><span class='op'>[</span><span class='num'>0</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_should_trace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Decide whether to trace execution in `filename`</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; This function is called from the trace function.&nbsp; As each new file name</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; is encountered, this function determines whether it is traced or not.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Returns a canonicalized filename if it should be traced, False if it</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; should not.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>filename</span> <span class='op'>==</span> <span class='str'>&#39;&lt;string&gt;&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># There&#39;s no point in ever tracing string executions, we can&#39;t do</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># anything with the data later anyway.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Compiled Python files have two filenames: frame.f_code.co_filename is</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># the filename at the time the .pyc was compiled.&nbsp; The second name</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># is __file__, which is where the .pyc was actually loaded from.&nbsp; Since</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># .pyc files can be moved after compilation (for example, by being</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># installed), we look for __file__ in the frame and prefer it to the</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># co_filename value.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>dunder_file</span> <span class='op'>=</span> <span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_globals</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='str'>&#39;__file__&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>dunder_file</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>dunder_file</span><span class='op'>.</span><span class='nam'>endswith</span><span class='op'>(</span><span class='str'>&quot;.py&quot;</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>dunder_file</span><span class='op'>[</span><span class='op'>-</span><span class='num'>4</span><span class='op'>:</span><span class='op'>-</span><span class='num'>1</span><span class='op'>]</span> <span class='op'>==</span> <span class='str'>&quot;.py&quot;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>dunder_file</span> <span class='op'>=</span> <span class='nam'>dunder_file</span><span class='op'>[</span><span class='op'>:</span><span class='op'>-</span><span class='num'>1</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>filename</span> <span class='op'>=</span> <span class='nam'>dunder_file</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>canonical</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>file_locator</span><span class='op'>.</span><span class='nam'>canonical_filename</span><span class='op'>(</span><span class='nam'>filename</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># If we aren&#39;t supposed to trace installed code, then check if this is</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># near the Python standard library and skip it if so.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_pylib</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>canonical</span><span class='op'>.</span><span class='nam'>startswith</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>pylib_prefix</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># We exclude the coverage code itself, since a little of it will be</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># measured otherwise.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>canonical</span><span class='op'>.</span><span class='nam'>startswith</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_prefix</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>canonical</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># To log what should_trace returns, change this to &quot;if 1:&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='key'>if</span> <span class='num'>0</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>_real_should_trace</span> <span class='op'>=</span> <span class='nam'>_should_trace</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_should_trace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>)</span><span class='op'>:</span>&nbsp;&nbsp; <span class='com'># pylint: disable-msg=E0102</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;A logging decorator around the real _should_trace function.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>ret</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_real_should_trace</span><span class='op'>(</span><span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>print</span><span class='op'>(</span><span class='str'>&quot;should_trace: %r -&gt; %r&quot;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>ret</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>ret</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>use_cache</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>usecache</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Control the use of a data file (incorrectly called a cache).</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `usecache` is true or false, whether to read and write data on disk.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>usefile</span><span class='op'>(</span><span class='nam'>usecache</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>load</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Load previously-collected coverage data from the data file.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>reset</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>read</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>start</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Start measuring code coverage.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>auto_data</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>load</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Save coverage data when Python exits.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>atexit_registered</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>atexit</span><span class='op'>.</span><span class='nam'>register</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>save</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>atexit_registered</span> <span class='op'>=</span> <span class='nam'>True</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>start</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>stop</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Stop measuring code coverage.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>stop</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_harvest_data</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>erase</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Erase previously-collected coverage data.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; This removes the in-memory data collected in this session as well as</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; discarding the data file.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>reset</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>erase</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>clear_exclude</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Clear the exclude list.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_list</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_re</span> <span class='op'>=</span> <span class='str'>&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>exclude</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>regex</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Exclude source lines from execution consideration.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `regex` is a regular expression.&nbsp; Lines matching this expression are</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; not considered executable when reporting code coverage.&nbsp; A list of</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; regexes is maintained; this function adds a new regex to the list.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Matching any of the regexes excludes a source line.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_list</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='nam'>regex</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_re</span> <span class='op'>=</span> <span class='str'>&quot;(&quot;</span> <span class='op'>+</span> <span class='str'>&quot;)|(&quot;</span><span class='op'>.</span><span class='nam'>join</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_list</span><span class='op'>)</span> <span class='op'>+</span> <span class='str'>&quot;)&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>get_exclude_list</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return the list of excluded regex patterns.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>exclude_list</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>save</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Save the collected coverage data to the data file.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_harvest_data</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>write</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>combine</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Combine together a number of similarly-named coverage data files.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; All coverage data files whose name starts with `data_file` (from the</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; coverage() constructor) will be read, and combined together into the</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; current measurements.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>combine_parallel_data</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_harvest_data</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Get the collected data and reset the collector.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>add_line_data</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>get_line_data</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>add_arc_data</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>get_arc_data</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>reset</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># Backward compatibility with version 1.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>analysis</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morf</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Like `analysis2` but doesn&#39;t return excluded line numbers.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span><span class='op'>,</span> <span class='nam'>s</span><span class='op'>,</span> <span class='nam'>_</span><span class='op'>,</span> <span class='nam'>m</span><span class='op'>,</span> <span class='nam'>mf</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>analysis2</span><span class='op'>(</span><span class='nam'>morf</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>f</span><span class='op'>,</span> <span class='nam'>s</span><span class='op'>,</span> <span class='nam'>m</span><span class='op'>,</span> <span class='nam'>mf</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>analysis2</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morf</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Analyze a module.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `morf` is a module or a filename.&nbsp; It will be analyzed to determine</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; its coverage statistics.&nbsp; The return value is a 5-tuple:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; * The filename for the module.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; * A list of line numbers of executable statements.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; * A list of line numbers of excluded statements.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; * A list of line numbers of statements not run (missing from</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; execution).</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; * A readable formatted string of the missing line numbers.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; The analysis uses the source file itself and the current measured</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; coverage data.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>analysis</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_analyze</span><span class='op'>(</span><span class='nam'>morf</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>analysis</span><span class='op'>.</span><span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>analysis</span><span class='op'>.</span><span class='nam'>statements</span><span class='op'>,</span> <span class='nam'>analysis</span><span class='op'>.</span><span class='nam'>excluded</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>analysis</span><span class='op'>.</span><span class='nam'>missing</span><span class='op'>,</span> <span class='nam'>analysis</span><span class='op'>.</span><span class='nam'>missing_formatted</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_analyze</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>it</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Analyze a single morf or code unit.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Returns an `Analysis` object.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>isinstance</span><span class='op'>(</span><span class='nam'>it</span><span class='op'>,</span> <span class='nam'>CodeUnit</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>it</span> <span class='op'>=</span> <span class='nam'>code_unit_factory</span><span class='op'>(</span><span class='nam'>it</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>file_locator</span><span class='op'>)</span><span class='op'>[</span><span class='num'>0</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Analysis</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>it</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>report</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morfs</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>show_missing</span><span class='op'>=</span><span class='nam'>True</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>file</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span>&nbsp; &nbsp;&nbsp; <span class='com'># pylint: disable-msg=W0622</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Write a summary report to `file`.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Each module in `morfs` is listed, with counts of statements, executed</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; statements, missing statements, and a list of lines missed.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span> <span class='op'>=</span> <span class='nam'>SummaryReporter</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>show_missing</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span><span class='op'>.</span><span class='nam'>report</span><span class='op'>(</span><span class='nam'>morfs</span><span class='op'>,</span> <span class='nam'>outfile</span><span class='op'>=</span><span class='nam'>file</span><span class='op'>,</span> <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>omit_prefixes</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>annotate</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morfs</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>directory</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Annotate a list of modules.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Each module in `morfs` is annotated.&nbsp; The source is written to a new</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; file, named with a &quot;,cover&quot; suffix, with each line prefixed with a</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; marker to indicate the coverage of the line.&nbsp; Covered lines have &quot;&gt;&quot;,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; excluded lines have &quot;-&quot;, and missing lines have &quot;!&quot;.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span> <span class='op'>=</span> <span class='nam'>AnnotateReporter</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span><span class='op'>.</span><span class='nam'>report</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>morfs</span><span class='op'>,</span> <span class='nam'>directory</span><span class='op'>=</span><span class='nam'>directory</span><span class='op'>,</span> <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>omit_prefixes</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>html_report</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morfs</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>directory</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Generate an HTML report.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span> <span class='op'>=</span> <span class='nam'>HtmlReporter</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span><span class='op'>.</span><span class='nam'>report</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>morfs</span><span class='op'>,</span> <span class='nam'>directory</span><span class='op'>=</span><span class='nam'>directory</span><span class='op'>,</span> <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>omit_prefixes</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>xml_report</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>morfs</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>outfile</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>=</span><span class='nam'>False</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Generate an XML report of coverage results.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; The report is compatible with Cobertura reports.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>outfile</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>outfile</span> <span class='op'>=</span> <span class='nam'>open</span><span class='op'>(</span><span class='nam'>outfile</span><span class='op'>,</span> <span class='str'>&quot;w&quot;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span> <span class='op'>=</span> <span class='nam'>XmlReporter</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>ignore_errors</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>reporter</span><span class='op'>.</span><span class='nam'>report</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>morfs</span><span class='op'>,</span> <span class='nam'>omit_prefixes</span><span class='op'>=</span><span class='nam'>omit_prefixes</span><span class='op'>,</span> <span class='nam'>outfile</span><span class='op'>=</span><span class='nam'>outfile</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>finally</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>outfile</span><span class='op'>.</span><span class='nam'>close</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>sysinfo</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return a list of key,value pairs showing internal information.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>import</span> <span class='nam'>coverage</span> <span class='key'>as</span> <span class='nam'>covmod</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>import</span> <span class='nam'>platform</span><span class='op'>,</span> <span class='nam'>re</span><span class='op'>,</span> <span class='nam'>sys</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>info</span> <span class='op'>=</span> <span class='op'>[</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;version&#39;</span><span class='op'>,</span> <span class='nam'>covmod</span><span class='op'>.</span><span class='nam'>__version__</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;coverage&#39;</span><span class='op'>,</span> <span class='nam'>covmod</span><span class='op'>.</span><span class='nam'>__file__</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;cover_prefix&#39;</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cover_prefix</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;pylib_prefix&#39;</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>pylib_prefix</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;tracer&#39;</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>collector</span><span class='op'>.</span><span class='nam'>tracer_name</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;data_path&#39;</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>filename</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;python&#39;</span><span class='op'>,</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>version</span><span class='op'>.</span><span class='nam'>replace</span><span class='op'>(</span><span class='str'>&#39;\n&#39;</span><span class='op'>,</span> <span class='str'>&#39;&#39;</span><span class='op'>)</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;platform&#39;</span><span class='op'>,</span> <span class='nam'>platform</span><span class='op'>.</span><span class='nam'>platform</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;cwd&#39;</span><span class='op'>,</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>getcwd</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;path&#39;</span><span class='op'>,</span> <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>path</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&#39;environment&#39;</span><span class='op'>,</span> <span class='op'>[</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='str'>&quot;%s = %s&quot;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>k</span><span class='op'>,</span> <span class='nam'>v</span><span class='op'>)</span><span class='op'>)</span> <span class='key'>for</span> <span class='nam'>k</span><span class='op'>,</span> <span class='nam'>v</span> <span class='key'>in</span> <span class='nam'>os</span><span class='op'>.</span><span class='nam'>environ</span><span class='op'>.</span><span class='nam'>items</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>re</span><span class='op'>.</span><span class='nam'>search</span><span class='op'>(</span><span class='str'>&quot;^COV|^PY&quot;</span><span class='op'>,</span> <span class='nam'>k</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>]</span><span class='op'>)</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>info</span><span class='strut'>&nbsp;</span></p>
+    
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

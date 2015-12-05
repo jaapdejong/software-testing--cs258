@@ -1,0 +1,46 @@
+install coverage tool
+	sudo apt-get install python-coverage
+
+remove old coverage data
+	python-coverage erase
+
+run the coverage tool
+	python-coverage run ./exercise2.py
+		list = [31]
+		min = 31
+		max = 31
+		median = 31
+		mode(s) = [31]
+		list = [31, 2, 31, 2]
+		min = 2
+		max = 31
+		median = 16
+		mode(s) = [2, 31]
+
+produces a file .coverage
+	ll -a
+		total 24
+		drwxr-xr-x 3 jdj jdj 4096 2015-12-05 14:36 .
+		drwxr-xr-x 6 jdj jdj 4096 2015-12-05 14:16 ..
+		-rw-r--r-- 1 jdj jdj  435 2015-12-05 14:35 .coverage
+		-rwxr-xr-x 1 jdj jdj 1472 2015-12-05 14:31 exercise2.py
+
+show the report
+	python-coverage report
+		Name                                     Stmts   Exec  Cover
+		------------------------------------------------------------
+		/usr/share/pyshared/coverage/backward       33      0     0%
+		/usr/share/pyshared/coverage/collector     121      5     4%
+		/usr/share/pyshared/coverage/control       115      1     0%
+		/usr/share/pyshared/coverage/execfile       26     16    61%
+		exercise2                                   36     36   100%
+		------------------------------------------------------------
+		TOTAL                                      331     58    17%
+
+make html report
+	python-coverage html -d exercise2.coverage
+
+show the report in the browser
+	google-chrome exercise2.coverage/index.html
+	google-chrome exercise2.coverage/exercise2.html
+
