@@ -1,0 +1,16 @@
+install coverage tool
+	sudo apt-get install python-coverage
+
+remove old coverage data
+	python-coverage erase
+
+run the coverage tool
+	python-coverage run --branch exercise4.py
+
+make html report
+	python-coverage html -d exercise4.coverage
+
+show the report in the browser
+	google-chrome exercise4.coverage/index.html
+	google-chrome exercise4.coverage/exercise4.html
+
