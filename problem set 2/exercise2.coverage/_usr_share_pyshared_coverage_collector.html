@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>Coverage for /usr/share/pyshared/coverage/collector</title>
+<link rel='stylesheet' href='style.css' type='text/css'>
+<script type='text/javascript' src='jquery-1.3.2.min.js'></script>
+<script type='text/javascript'>
+function toggle_lines(btn, cls) {
+    var btn = $(btn);
+    var hide = "hide_"+cls;
+    if (btn.hasClass(hide)) {
+        $("#source ."+cls).removeClass(hide);
+        btn.removeClass(hide);
+    }
+    else {
+        $("#source ."+cls).addClass(hide);
+        btn.addClass(hide);
+    }
+}
+</script>
+</head>
+<body>
+<div id='header'>
+    <div class='content'>
+        <h1>Coverage for <b>/usr/share/pyshared/coverage/collector</b> :
+            <span class='pc_cov'>2%</span>
+        </h1>
+        <h2 class='stats'>
+            121 statements
+            <span class='run hide_run' onclick='toggle_lines(this, "run")'>3 run</span>
+            <span class='exc' onclick='toggle_lines(this, "exc")'>0 excluded</span>
+            <span class='mis' onclick='toggle_lines(this, "mis")'>118 missing</span>
+            
+                <span class='par run hide_run' onclick='toggle_lines(this, "par")'>1 partial</span>
+            
+        </h2>
+    </div>
+</div>
+
+<div id='source'>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+<td class='linenos' valign='top'>
+<p class='pln'>1</p>
+<p class='pln'>2</p>
+<p class='stm mis'>3</p>
+<p class='pln'>4</p>
+<p class='stm mis'>5</p>
+<p class='pln'>6</p>
+<p class='stm mis'>7</p>
+<p class='stm mis'>8</p>
+<p class='pln'>9</p>
+<p class='stm mis'>10</p>
+<p class='pln'>11</p>
+<p class='pln'>12</p>
+<p class='stm mis'>13</p>
+<p class='pln'>14</p>
+<p class='pln'>15</p>
+<p class='pln'>16</p>
+<p class='pln'>17</p>
+<p class='pln'>18</p>
+<p class='pln'>19</p>
+<p class='pln'>20</p>
+<p class='pln'>21</p>
+<p class='pln'>22</p>
+<p class='pln'>23</p>
+<p class='pln'>24</p>
+<p class='pln'>25</p>
+<p class='pln'>26</p>
+<p class='pln'>27</p>
+<p class='pln'>28</p>
+<p class='pln'>29</p>
+<p class='pln'>30</p>
+<p class='pln'>31</p>
+<p class='stm mis'>32</p>
+<p class='stm mis'>33</p>
+<p class='stm mis'>34</p>
+<p class='stm mis'>35</p>
+<p class='stm mis'>36</p>
+<p class='stm mis'>37</p>
+<p class='stm mis'>38</p>
+<p class='stm mis'>39</p>
+<p class='stm mis'>40</p>
+<p class='pln'>41</p>
+<p class='stm mis'>42</p>
+<p class='pln'>43</p>
+<p class='pln'>44</p>
+<p class='pln'>45</p>
+<p class='pln'>46</p>
+<p class='pln'>47</p>
+<p class='stm mis'>48</p>
+<p class='stm mis'>49</p>
+<p class='pln'>50</p>
+<p class='stm mis'>51</p>
+<p class='stm mis'>52</p>
+<p class='stm mis'>53</p>
+<p class='stm mis'>54</p>
+<p class='pln'>55</p>
+<p class='stm mis'>56</p>
+<p class='pln'>57</p>
+<p class='pln'>58</p>
+<p class='stm mis'>59</p>
+<p class='stm mis'>60</p>
+<p class='stm mis'>61</p>
+<p class='stm mis'>62</p>
+<p class='stm mis'>63</p>
+<p class='stm mis'>64</p>
+<p class='stm mis'>65</p>
+<p class='pln'>66</p>
+<p class='stm mis'>67</p>
+<p class='stm mis'>68</p>
+<p class='stm mis'>69</p>
+<p class='pln'>70</p>
+<p class='stm mis'>71</p>
+<p class='stm mis'>72</p>
+<p class='pln'>73</p>
+<p class='stm mis'>74</p>
+<p class='pln'>75</p>
+<p class='pln'>76</p>
+<p class='stm mis'>77</p>
+<p class='stm mis'>78</p>
+<p class='stm mis'>79</p>
+<p class='stm mis'>80</p>
+<p class='stm mis'>81</p>
+<p class='pln'>82</p>
+<p class='stm mis'>83</p>
+<p class='stm mis'>84</p>
+<p class='pln'>85</p>
+<p class='stm mis'>86</p>
+<p class='stm mis'>87</p>
+<p class='pln'>88</p>
+<p class='stm mis'>89</p>
+<p class='pln'>90</p>
+<p class='stm mis'>91</p>
+<p class='pln'>92</p>
+<p class='stm mis'>93</p>
+<p class='pln'>94</p>
+<p class='stm mis'>95</p>
+<p class='pln'>96</p>
+<p class='stm mis'>97</p>
+<p class='pln'>98</p>
+<p class='stm mis'>99</p>
+<p class='pln'>100</p>
+<p class='pln'>101</p>
+<p class='stm mis'>102</p>
+<p class='pln'>103</p>
+<p class='pln'>104</p>
+<p class='pln'>105</p>
+<p class='pln'>106</p>
+<p class='pln'>107</p>
+<p class='pln'>108</p>
+<p class='pln'>109</p>
+<p class='pln'>110</p>
+<p class='pln'>111</p>
+<p class='pln'>112</p>
+<p class='pln'>113</p>
+<p class='pln'>114</p>
+<p class='pln'>115</p>
+<p class='pln'>116</p>
+<p class='pln'>117</p>
+<p class='pln'>118</p>
+<p class='pln'>119</p>
+<p class='pln'>120</p>
+<p class='stm mis'>121</p>
+<p class='pln'>122</p>
+<p class='stm mis'>123</p>
+<p class='pln'>124</p>
+<p class='pln'>125</p>
+<p class='pln'>126</p>
+<p class='pln'>127</p>
+<p class='pln'>128</p>
+<p class='pln'>129</p>
+<p class='pln'>130</p>
+<p class='pln'>131</p>
+<p class='pln'>132</p>
+<p class='pln'>133</p>
+<p class='pln'>134</p>
+<p class='pln'>135</p>
+<p class='pln'>136</p>
+<p class='pln'>137</p>
+<p class='pln'>138</p>
+<p class='pln'>139</p>
+<p class='stm mis'>140</p>
+<p class='stm mis'>141</p>
+<p class='stm mis'>142</p>
+<p class='pln'>143</p>
+<p class='stm mis'>144</p>
+<p class='pln'>145</p>
+<p class='stm mis'>146</p>
+<p class='pln'>147</p>
+<p class='pln'>148</p>
+<p class='pln'>149</p>
+<p class='stm mis'>150</p>
+<p class='pln'>151</p>
+<p class='stm mis'>152</p>
+<p class='stm mis'>153</p>
+<p class='pln'>154</p>
+<p class='stm mis'>155</p>
+<p class='pln'>156</p>
+<p class='stm mis'>157</p>
+<p class='pln'>158</p>
+<p class='stm mis'>159</p>
+<p class='pln'>160</p>
+<p class='pln'>161</p>
+<p class='pln'>162</p>
+<p class='stm mis'>163</p>
+<p class='pln'>164</p>
+<p class='pln'>165</p>
+<p class='pln'>166</p>
+<p class='pln'>167</p>
+<p class='stm mis'>168</p>
+<p class='pln'>169</p>
+<p class='pln'>170</p>
+<p class='stm mis'>171</p>
+<p class='pln'>172</p>
+<p class='stm mis'>173</p>
+<p class='pln'>174</p>
+<p class='stm mis'>175</p>
+<p class='stm mis'>176</p>
+<p class='stm mis'>177</p>
+<p class='stm mis'>178</p>
+<p class='stm mis'>179</p>
+<p class='stm mis'>180</p>
+<p class='stm mis'>181</p>
+<p class='pln'>182</p>
+<p class='pln'>183</p>
+<p class='pln'>184</p>
+<p class='pln'>185</p>
+<p class='pln'>186</p>
+<p class='pln'>187</p>
+<p class='pln'>188</p>
+<p class='stm mis'>189</p>
+<p class='pln'>190</p>
+<p class='pln'>191</p>
+<p class='stm mis'>192</p>
+<p class='pln'>193</p>
+<p class='stm mis'>194</p>
+<p class='pln'>195</p>
+<p class='stm mis'>196</p>
+<p class='pln'>197</p>
+<p class='stm mis'>198</p>
+<p class='pln'>199</p>
+<p class='stm mis'>200</p>
+<p class='stm mis'>201</p>
+<p class='stm mis'>202</p>
+<p class='pln'>203</p>
+<p class='pln'>204</p>
+<p class='stm mis'>205</p>
+<p class='pln'>206</p>
+<p class='pln'>207</p>
+<p class='stm mis'>208</p>
+<p class='pln'>209</p>
+<p class='stm mis'>210</p>
+<p class='pln'>211</p>
+<p class='pln'>212</p>
+<p class='stm run hide_run'>213</p>
+<p class='stm run hide_run'>214</p>
+<p class='pln'>215</p>
+<p class='stm mis'>216</p>
+<p class='stm mis'>217</p>
+<p class='pln'>218</p>
+<p class='pln'>219</p>
+<p class='pln'>220</p>
+<p class='stm mis'>221</p>
+<p class='stm mis'>222</p>
+<p class='stm mis'>223</p>
+<p class='pln'>224</p>
+<p class='stm mis'>225</p>
+<p class='pln'>226</p>
+<p class='stm par run hide_run'>227</p>
+<p class='stm mis'>228</p>
+<p class='stm mis'>229</p>
+<p class='stm mis'>230</p>
+<p class='stm mis'>231</p>
+<p class='stm mis'>232</p>
+<p class='stm mis'>233</p>
+<p class='stm mis'>234</p>
+<p class='pln'>235</p>
+<p class='stm mis'>236</p>
+<p class='pln'>237</p>
+<p class='stm mis'>238</p>
+<p class='stm mis'>239</p>
+<p class='stm mis'>240</p>
+<p class='pln'>241</p>
+<p class='stm mis'>242</p>
+<p class='pln'>243</p>
+<p class='pln'>244</p>
+<p class='pln'>245</p>
+<p class='pln'>246</p>
+<p class='pln'>247</p>
+<p class='stm mis'>248</p>
+<p class='pln'>249</p>
+<p class='pln'>250</p>
+<p class='stm mis'>251</p>
+<p class='stm mis'>252</p>
+<p class='stm mis'>253</p>
+<p class='stm mis'>254</p>
+<p class='stm mis'>255</p>
+<p class='stm mis'>256</p>
+<p class='stm mis'>257</p>
+<p class='pln'>258</p>
+<p class='stm mis'>259</p>
+<p class='pln'>260</p>
+<p class='stm mis'>261</p>
+<p class='pln'>262</p>
+<p class='pln'>263</p>
+<p class='pln'>264</p>
+<p class='pln'>265</p>
+<p class='pln'>266</p>
+<p class='pln'>267</p>
+<p class='pln'>268</p>
+<p class='pln'>269</p>
+<p class='stm mis'>270</p>
+<p class='stm mis'>271</p>
+<p class='pln'>272</p>
+<p class='stm mis'>273</p>
+    
+</td>
+<td class='text' valign='top'>
+<p class='pln'><span class='str'>&quot;&quot;&quot;Raw data collector for Coverage.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>import</span> <span class='nam'>sys</span><span class='op'>,</span> <span class='nam'>threading</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># Use the C extension code when we can, for speed.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>coverage</span><span class='op'>.</span><span class='nam'>tracer</span> <span class='key'>import</span> <span class='nam'>Tracer</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>except</span> <span class='nam'>ImportError</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># Couldn&#39;t import the C extension, maybe it isn&#39;t built.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='nam'>Tracer</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>class</span> <span class='nam'>PyTracer</span><span class='op'>(</span><span class='nam'>object</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Python implementation of the raw data tracer.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># Because of poor implementations of trace-function-manipulating tools,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># the Python trace function must be kept very simple.&nbsp; In particular, there</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># must be only one function ever set as the trace function, both through</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># sys.settrace, and as the return value from the trace function.&nbsp; Put</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># another way, the trace function must always return itself.&nbsp; It cannot</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># swap in other functions, or return None to avoid tracing a particular</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># frame.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># The trace manipulator that introduced this restriction is DecoratorTools,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># which sets a trace function, and then later restores the pre-existing one</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># by calling sys.settrace with a function it found in the current frame.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'>#</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># Systems that use DecoratorTools (or similar trace manipulations) must use</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># PyTracer to get accurate results.&nbsp; The command-line --timid argument is</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># used to force the use of this tracer.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>__init__</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace_cache</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span> <span class='op'>=</span> <span class='num'>0</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data_stack</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_exc_back</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>arcs</span> <span class='op'>=</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_trace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>,</span> <span class='nam'>event</span><span class='op'>,</span> <span class='nam'>arg_unused</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;The trace function passed to sys.settrace.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &quot;trace event: %s %r @%d&quot; % (</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; event, frame.f_code.co_filename, frame.f_lineno)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_exc_back</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>frame</span> <span class='op'>==</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_exc_back</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Someone forgot a return event.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>arcs</span> <span class='key'>and</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>[</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span><span class='op'>,</span> <span class='op'>-</span><span class='num'>1</span><span class='op'>)</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data_stack</span><span class='op'>.</span><span class='nam'>pop</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_exc_back</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>event</span> <span class='op'>==</span> <span class='str'>&#39;call&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Entering a new function context.&nbsp; Decide if we should trace</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># in this file.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data_stack</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>filename</span> <span class='op'>=</span> <span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_code</span><span class='op'>.</span><span class='nam'>co_filename</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracename</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace</span><span class='op'>(</span><span class='nam'>filename</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>tracename</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>tracename</span> <span class='key'>not</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>[</span><span class='nam'>tracename</span><span class='op'>]</span> <span class='op'>=</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>[</span><span class='nam'>tracename</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span> <span class='op'>=</span> <span class='op'>-</span><span class='num'>1</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>elif</span> <span class='nam'>event</span> <span class='op'>==</span> <span class='str'>&#39;line&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Record an executed line.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span> <span class='key'>is</span> <span class='key'>not</span> <span class='nam'>None</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>arcs</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &quot;lin&quot;, self.last_line, frame.f_lineno</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>[</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span><span class='op'>,</span> <span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_lineno</span><span class='op'>)</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &quot;lin&quot;, frame.f_lineno</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>[</span><span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_lineno</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span> <span class='op'>=</span> <span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_lineno</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>elif</span> <span class='nam'>event</span> <span class='op'>==</span> <span class='str'>&#39;return&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>arcs</span> <span class='key'>and</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>[</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span><span class='op'>,</span> <span class='op'>-</span><span class='num'>1</span><span class='op'>)</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Leaving this function, pop the filename stack.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>cur_file_data</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_line</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data_stack</span><span class='op'>.</span><span class='nam'>pop</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>elif</span> <span class='nam'>event</span> <span class='op'>==</span> <span class='str'>&#39;exception&#39;</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &quot;exc&quot;, self.last_line, frame.f_lineno</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>last_exc_back</span> <span class='op'>=</span> <span class='nam'>frame</span><span class='op'>.</span><span class='nam'>f_back</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>start</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Start this Tracer.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>stop</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Stop this Tracer.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>None</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>get_stats</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return a dictionary of statistics, or None.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'><span class='key'>class</span> <span class='nam'>Collector</span><span class='op'>(</span><span class='nam'>object</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Collects trace data.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Creates a Tracer object for each thread, since they track stack</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; information.&nbsp; Each Tracer points to the same shared data, contributing</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; traced data points.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; When the Collector is started, it creates a Tracer for the current thread,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; and installs a function to create Tracers for each new thread started.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; When the Collector is stopped, all active Tracers are stopped.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; Threads started while the Collector is stopped will never have Tracers</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; associated with them.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># The stack of active Collectors.&nbsp; Collectors are added here when started,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># and popped when stopped.&nbsp; Collectors on the stack are paused when not</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># the top, and resumed when they become the top again.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='nam'>_collectors</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>__init__</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>should_trace</span><span class='op'>,</span> <span class='nam'>timid</span><span class='op'>,</span> <span class='nam'>branch</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Create a collector.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `should_trace` is a function, taking a filename, and returning a</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; canonicalized filename, or False depending on whether the file should</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; be traced or not.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; If `timid` is true, then a slower simpler trace function will be</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; used.&nbsp; This is important for some environments where manipulation of</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; tracing functions make the faster more sophisticated trace function not</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; operate properly.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; If `branch` is true, then branches will be measured.&nbsp; This involves</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; collecting data on which statements followed each other (arcs).&nbsp; Use</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; `get_arc_data` to get the arc data.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace</span> <span class='op'>=</span> <span class='nam'>should_trace</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>branch</span> <span class='op'>=</span> <span class='nam'>branch</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>reset</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>timid</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Being timid: use the simple Python trace function.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace_class</span> <span class='op'>=</span> <span class='nam'>PyTracer</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Being fast: use the C Tracer if it is available, else the Python</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># trace function.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace_class</span> <span class='op'>=</span> <span class='nam'>Tracer</span> <span class='key'>or</span> <span class='nam'>PyTracer</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>__repr__</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='str'>&quot;&lt;Collector at 0x%x&gt;&quot;</span> <span class='op'>%</span> <span class='nam'>id</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>tracer_name</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return the class name of the tracer we&#39;re using.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace_class</span><span class='op'>.</span><span class='nam'>__name__</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>reset</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Clear collected data, and prepare to collect more.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># A dictionary mapping filenames to dicts with linenumber keys,</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># or mapping filenames to dicts with linenumber pairs as keys.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span> <span class='op'>=</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># A cache of the results from should_trace, the decision about whether</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># to trace execution in a file. A dict of filename to (filename or</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># False).</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace_cache</span> <span class='op'>=</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Our active Tracers.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>tracers</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_start_tracer</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Start a new Tracer object, and store it in self.tracers.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_trace_class</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>data</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>arcs</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>branch</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>should_trace</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>should_trace_cache</span> <span class='op'>=</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>should_trace_cache</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>start</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>tracers</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='nam'>tracer</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># The trace function has to be set individually on each thread before</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># execution begins.&nbsp; Ironically, the only support the threading module has</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># for running code before the thread main is the tracing function.&nbsp; So we</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># install this as a trace function, and the first time it&#39;s called, it does</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; <span class='com'># the real trace installation.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_installation_trace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>frame_unused</span><span class='op'>,</span> <span class='nam'>event_unused</span><span class='op'>,</span> <span class='nam'>arg_unused</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Called on new threads, installs the real tracer.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Remove ourselves as the trace function</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>sys</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>None</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Install the real tracer.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_start_tracer</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Return None to reiterate that we shouldn&#39;t be used for tracing.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>start</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Start collecting trace information.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>[</span><span class='op'>-</span><span class='num'>1</span><span class='op'>]</span><span class='op'>.</span><span class='nam'>pause</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &gt;&gt;sys.stderr, &quot;Started: %r&quot; % self._collectors</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Install the tracer on this thread.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_start_tracer</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Install our installation tracer in threading, to jump start other</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># threads.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>threading</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>_installation_trace</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>stop</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Stop collecting trace information.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'>#print &gt;&gt;sys.stderr, &quot;Stopping: %r&quot; % self._collectors</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>assert</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='strut'>&nbsp;</span></p>
+<p class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>assert</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>[</span><span class='op'>-</span><span class='num'>1</span><span class='op'>]</span> <span class='key'>is</span> <span class='nam'>self</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>pause</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>tracers</span> <span class='op'>=</span> <span class='op'>[</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># Remove this Collector from the stack, and resume the one underneath</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># (if any).</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>.</span><span class='nam'>pop</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_collectors</span><span class='op'>[</span><span class='op'>-</span><span class='num'>1</span><span class='op'>]</span><span class='op'>.</span><span class='nam'>resume</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>pause</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Pause tracing, but be prepared to `resume`.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm par run hide_run'><span class='annotate' title='no jump to this line number'>234</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>tracer</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>tracers</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>stop</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>stats</span> <span class='op'>=</span> <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>get_stats</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>stats</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>print</span><span class='op'>(</span><span class='str'>&quot;\nCoverage.py tracer stats:&quot;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>k</span> <span class='key'>in</span> <span class='nam'>sorted</span><span class='op'>(</span><span class='nam'>stats</span><span class='op'>.</span><span class='nam'>keys</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>print</span><span class='op'>(</span><span class='str'>&quot;%16s: %s&quot;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>k</span><span class='op'>,</span> <span class='nam'>stats</span><span class='op'>[</span><span class='nam'>k</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>threading</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>None</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>resume</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Resume tracing after a `pause`.&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>tracer</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>tracers</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>tracer</span><span class='op'>.</span><span class='nam'>start</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>threading</span><span class='op'>.</span><span class='nam'>settrace</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>.</span><span class='nam'>_installation_trace</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>get_line_data</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return the line data collected.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Data is { filename: { lineno: None, ...}, ...}</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>branch</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># If we were measuring branches, then we have to re-build the dict</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># to show line data.</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>line_data</span> <span class='op'>=</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>f</span><span class='op'>,</span> <span class='nam'>arcs</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>.</span><span class='nam'>items</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>line_data</span><span class='op'>[</span><span class='nam'>f</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>ldf</span> <span class='op'>=</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>l1</span><span class='op'>,</span> <span class='nam'>_</span> <span class='key'>in</span> <span class='nam'>arcs</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>l1</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>ldf</span><span class='op'>[</span><span class='nam'>l1</span><span class='op'>]</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>line_data</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>get_arc_data</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&quot;&quot;&quot;Return the arc data collected.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Data is { filename: { (l1, l2): None, ...}, ...}</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; Note that no data is collected or returned if the Collector wasn&#39;t</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; created with `branch` true.</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='strut'>&nbsp;</span></p>
+<p class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>branch</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>data</span><span class='strut'>&nbsp;</span></p>
+<p class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='op'>{</span><span class='op'>}</span><span class='strut'>&nbsp;</span></p>
+    
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
