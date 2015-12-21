@@ -98,7 +98,38 @@ class Queue:
             assert (self
                     .size==0) or (self.size==self.max)    
 
+maxValue = 999999
+numTests = 10000
+queueLength = 500
 
 def random_test():
-# Write a random tester for the Queue class
+	results = []
+	q = Queue(queueLength)
+	enqueueErrors = 0
+	dequeueErrors = 0
+	for i in range(numTests):
+		if (random.random() < 0.5):
+			value = random.randint(-maxValue, maxValue)
+			try:
+				q.enqueue(value)
+				q.checkRep()
+				results.append((value, 0))
+			except:
+				results.append((value, 1))
+				enqueueErrors += 1
+				
+		else:
+			try:
+				q.dequeue()
+				q.checkRep()
+				results.append(('dq', 0))
+			except:
+				results.append(('dq', 1))
+				dequeueErrors += 1
+
+	print "Enqueue Errors:", enqueueErrors
+	print "Dequeue Errors:", dequeueErrors
+	return results
+	
+random_test()
 

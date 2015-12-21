@@ -30,7 +30,24 @@ In hac habitasse platea dictumst. Morbi et leo enim.
 Aenean ipsum ipsum, laoreet vel cursus a, tincidunt ultrices augue.
 Aliquam ac erat eget nunc lacinia imperdiet vel id nulla."""
 
+fuzzFactor  = 250
+numTests = 5000
 
 def fuzzit(content):
-# Write a random fuzzer for a simulated text viewer application
+
+	buf = bytearray(content)
+	strings = []
+
+	for i in range(numTests):
+
+		numWrites = random.randrange(math.ceil((float(len(buf)) / fuzzFactor))) + 1
+
+		for j in range(numWrites):
+			rbyte = random.randrange(256)
+			rn = random.randrange(len(buf))
+			buf[rn] = "%c"%(rbyte)
+
+		strings.append(str(buf))
+
+	return strings
 
