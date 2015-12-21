@@ -6,7 +6,7 @@
 #	-- Part 2 - http://www.youtube.com/watch?v=lK5fgCvS2N4 (verified)
 
 # List of files to use as initial seed.
-file_list=[
+file_list = [
 	"pdf-sample.pdf"
 	]
 
@@ -18,8 +18,8 @@ apps = [
 
 fuzz_output = "fuzz.pdf"
 
-FuzzFactor  = 250
-num_tests   = 60
+FuzzFactor = 250
+num_tests = 60
 
 ############### end configuration #################
 
