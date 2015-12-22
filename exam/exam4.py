@@ -91,7 +91,40 @@ class Queue:
         if self.head == self.tail:
             assert (self.size==0) or (self.size==self.max)
 
-
 # Provide full statement and parameter value coverage of the Queue class
 def test():
+	
+	# test queue creation & string conversion
+	q = Queue(2)         ; q.checkRep()
+	s = str(q)           ; q.checkRep()
+
+	# test empty & non full
+	q.empty()            ; q.checkRep()
+	q.full()             ; q.checkRep()
+	q.dequeue()          ; q.checkRep()
+	
+	# test non empty & full
+	q.enqueue(1)         ; q.checkRep()
+	q.enqueue(2)         ; q.checkRep()
+	q.enqueue(3)         ; q.checkRep()
+	q.empty()            ; q.checkRep()
+	q.full()             ; q.checkRep()
+	
+	# test different types
+	q.clear()            ; q.checkRep()
+	q.enqueue(3.14)      ; q.checkRep()
+	q.enqueue(123)       ; q.checkRep()
+	q.enqueue("Str")     ; q.checkRep()
+	q.enqueue(True)      ; q.checkRep()
+	q.dequeue()          ; q.checkRep()
+	q.dequeue()          ; q.checkRep()
+	q.enqueue(False)     ; q.checkRep()
+	q.dequeue()          ; q.checkRep()
+	
+	# test enqueueall
+	q.enqueueall(1)      ; q.checkRep()
+	q.enqueueall([0, 1]) ; q.checkRep()
+	q.enqueueall((0, 1)) ; q.checkRep()
+
+test()
 

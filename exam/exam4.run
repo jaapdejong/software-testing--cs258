@@ -1,0 +1,7 @@
+#!/bin/sh
+
+python-coverage erase &&
+python-coverage run --branch exam4.py &&
+python-coverage html -d exam4.coverage &&
+google-chrome exam4.coverage/exam4.html
+
